@@ -1,0 +1,112 @@
+2020-10-12 15:51:45.402 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Added output org.lubokkanev.bitcoinnode.transaction.Xput@68ad99fe to UTXO set.
+2020-10-12 15:51:45.406 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Parsed block 1 hash: [].
+2020-10-12 15:51:45.424 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Added output org.lubokkanev.bitcoinnode.transaction.Xput@aeab9a1 to UTXO set.
+2020-10-12 15:51:45.425 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Parsed block 1 hash: [].
+2020-10-12 15:51:45.427 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Added output org.lubokkanev.bitcoinnode.transaction.Xput@72ea6193 to UTXO set.
+2020-10-12 15:51:45.427 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Parsed block 1 hash: [].
+2020-10-12 15:51:45.432 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Added output org.lubokkanev.bitcoinnode.transaction.Xput@b6b1987 to UTXO set.
+2020-10-12 15:51:45.433 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Parsed block 1 hash: [].
+2020-10-12 15:51:45.436 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Added output org.lubokkanev.bitcoinnode.transaction.Xput@7c541c15 to UTXO set.
+2020-10-12 15:51:45.436 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Parsed block 1 hash: [].
+2020-10-12 15:51:45.439 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Added output org.lubokkanev.bitcoinnode.transaction.Xput@4212a0c8 to UTXO set.
+2020-10-12 15:51:45.439 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Parsed block 1 hash: [].
+2020-10-12 15:51:45.440 INFO  org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Successfully mined block 2, hash: []
+2020-10-12 15:51:45.443 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Added output org.lubokkanev.bitcoinnode.transaction.Xput@655f7ea to UTXO set.
+2020-10-12 15:51:45.444 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Parsed block 1 hash: [].
+2020-10-12 15:51:45.445 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Received valid block 2
+2020-10-12 16:32:03.908 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Added output org.lubokkanev.bitcoinnode.transaction.Xput@60b85ba1 to UTXO set.
+2020-10-12 16:32:03.913 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Parsed block 1 hash: [].
+2020-10-12 16:32:03.933 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Added output org.lubokkanev.bitcoinnode.transaction.Xput@3c49fab6 to UTXO set.
+2020-10-12 16:32:03.937 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Parsed block 1 hash: [].
+2020-10-12 16:32:03.941 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Added output org.lubokkanev.bitcoinnode.transaction.Xput@14c053c6 to UTXO set.
+2020-10-12 16:32:03.942 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Parsed block 1 hash: [].
+2020-10-12 16:32:03.945 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Added output org.lubokkanev.bitcoinnode.transaction.Xput@777c9dc9 to UTXO set.
+2020-10-12 16:32:03.946 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Parsed block 1 hash: [].
+2020-10-12 16:32:03.949 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Added output org.lubokkanev.bitcoinnode.transaction.Xput@589b028e to UTXO set.
+2020-10-12 16:32:03.950 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Parsed block 1 hash: [].
+2020-10-12 16:32:03.953 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Added output org.lubokkanev.bitcoinnode.transaction.Xput@3b809711 to UTXO set.
+2020-10-12 16:32:03.953 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Parsed block 1 hash: [].
+2020-10-12 16:32:03.954 INFO  org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Successfully mined block 2, hash: []
+2020-10-12 16:32:03.958 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Added output org.lubokkanev.bitcoinnode.transaction.Xput@2a415aa9 to UTXO set.
+2020-10-12 16:32:03.959 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Parsed block 1 hash: [].
+2020-10-12 16:32:03.959 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Received valid block 2
+2020-10-12 16:33:00.571 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Added output org.lubokkanev.bitcoinnode.transaction.Xput@60b85ba1 to UTXO set.
+2020-10-12 16:33:00.578 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Parsed block 1 hash: [].
+2020-10-12 16:33:00.599 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Added output org.lubokkanev.bitcoinnode.transaction.Xput@3c49fab6 to UTXO set.
+2020-10-12 16:33:00.599 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Parsed block 1 hash: [].
+2020-10-12 16:33:00.604 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Added output org.lubokkanev.bitcoinnode.transaction.Xput@14c053c6 to UTXO set.
+2020-10-12 16:33:00.605 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Parsed block 1 hash: [].
+2020-10-12 16:33:00.609 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Added output org.lubokkanev.bitcoinnode.transaction.Xput@777c9dc9 to UTXO set.
+2020-10-12 16:33:00.609 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Parsed block 1 hash: [].
+2020-10-12 16:33:00.613 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Added output org.lubokkanev.bitcoinnode.transaction.Xput@589b028e to UTXO set.
+2020-10-12 16:33:00.613 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Parsed block 1 hash: [].
+2020-10-12 16:33:00.617 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Added output org.lubokkanev.bitcoinnode.transaction.Xput@3b809711 to UTXO set.
+2020-10-12 16:33:00.618 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Parsed block 1 hash: [].
+2020-10-12 16:33:00.619 INFO  org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Successfully mined block 2, hash: []
+2020-10-12 16:33:00.623 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Added output org.lubokkanev.bitcoinnode.transaction.Xput@2a415aa9 to UTXO set.
+2020-10-12 16:33:00.624 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Parsed block 1 hash: [].
+2020-10-12 16:33:00.625 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Received valid block 2
+2020-10-12 16:34:22.765 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Added output org.lubokkanev.bitcoinnode.transaction.Xput@106faf11 to UTXO set.
+2020-10-12 16:34:22.771 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Parsed block 1 hash: [].
+2020-10-12 16:34:22.792 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Added output org.lubokkanev.bitcoinnode.transaction.Xput@1a1d3c1a to UTXO set.
+2020-10-12 16:34:22.793 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Parsed block 1 hash: [].
+2020-10-12 16:34:22.796 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Added output org.lubokkanev.bitcoinnode.transaction.Xput@17ae98d7 to UTXO set.
+2020-10-12 16:34:22.797 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Parsed block 1 hash: [].
+2020-10-12 16:34:22.801 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Added output org.lubokkanev.bitcoinnode.transaction.Xput@39fc6b2c to UTXO set.
+2020-10-12 16:34:22.803 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Parsed block 1 hash: [].
+2020-10-12 16:34:22.805 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Added output org.lubokkanev.bitcoinnode.transaction.Xput@2e27d72f to UTXO set.
+2020-10-12 16:34:22.806 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Parsed block 1 hash: [].
+2020-10-12 16:34:22.809 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Added output org.lubokkanev.bitcoinnode.transaction.Xput@2bffa76d to UTXO set.
+2020-10-12 16:34:22.810 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Parsed block 1 hash: [].
+2020-10-12 16:34:22.810 INFO  org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Successfully mined block 2, hash: []
+2020-10-12 16:34:22.813 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Added output org.lubokkanev.bitcoinnode.transaction.Xput@7668d560 to UTXO set.
+2020-10-12 16:34:22.814 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Parsed block 1 hash: [].
+2020-10-12 16:34:22.815 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Received valid block 2
+2020-10-12 16:36:49.405 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Added output org.lubokkanev.bitcoinnode.transaction.Xput@27a0a5a2 to UTXO set.
+2020-10-12 16:36:49.410 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Parsed block 1 hash: [].
+2020-10-12 16:36:49.432 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Added output org.lubokkanev.bitcoinnode.transaction.Xput@117632cf to UTXO set.
+2020-10-12 16:36:49.432 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Parsed block 1 hash: [].
+2020-10-12 16:36:49.435 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Added output org.lubokkanev.bitcoinnode.transaction.Xput@1c65121 to UTXO set.
+2020-10-12 16:36:49.436 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Parsed block 1 hash: [].
+2020-10-12 16:36:49.439 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Added output org.lubokkanev.bitcoinnode.transaction.Xput@17ae98d7 to UTXO set.
+2020-10-12 16:36:49.439 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Parsed block 1 hash: [].
+2020-10-12 16:36:49.449 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Added output org.lubokkanev.bitcoinnode.transaction.Xput@704b2127 to UTXO set.
+2020-10-12 16:36:49.453 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Parsed block 1 hash: [].
+2020-10-12 16:36:49.456 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Added output org.lubokkanev.bitcoinnode.transaction.Xput@7cc9ce8 to UTXO set.
+2020-10-12 16:36:49.459 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Parsed block 1 hash: [].
+2020-10-12 16:36:49.460 INFO  org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Successfully mined block 2, hash: []
+2020-10-12 16:36:49.464 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Added output org.lubokkanev.bitcoinnode.transaction.Xput@1f2d2181 to UTXO set.
+2020-10-12 16:36:49.467 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Parsed block 1 hash: [].
+2020-10-12 16:36:49.467 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Received valid block 2
+2020-10-12 16:42:11.855 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Added output org.lubokkanev.bitcoinnode.transaction.Xput@77b21474 to UTXO set.
+2020-10-12 16:42:11.860 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Parsed block 1 hash: [].
+2020-10-12 16:42:11.889 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Added output org.lubokkanev.bitcoinnode.transaction.Xput@24855019 to UTXO set.
+2020-10-12 16:42:11.890 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Parsed block 1 hash: [].
+2020-10-12 16:42:11.898 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Added output org.lubokkanev.bitcoinnode.transaction.Xput@3fabf088 to UTXO set.
+2020-10-12 16:42:11.899 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Parsed block 1 hash: [].
+2020-10-12 16:42:11.902 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Added output org.lubokkanev.bitcoinnode.transaction.Xput@2c22a348 to UTXO set.
+2020-10-12 16:42:11.903 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Parsed block 1 hash: [].
+2020-10-12 16:42:11.906 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Added output org.lubokkanev.bitcoinnode.transaction.Xput@27dc79f7 to UTXO set.
+2020-10-12 16:42:11.907 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Parsed block 1 hash: [].
+2020-10-12 16:42:11.921 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Added output org.lubokkanev.bitcoinnode.transaction.Xput@5cbf9e9f to UTXO set.
+2020-10-12 16:42:11.922 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Parsed block 1 hash: [].
+2020-10-12 16:42:11.923 INFO  org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Successfully mined block 2, hash: []
+2020-10-12 16:42:11.930 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Added output org.lubokkanev.bitcoinnode.transaction.Xput@1deb2c43 to UTXO set.
+2020-10-12 16:42:11.931 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Parsed block 1 hash: [].
+2020-10-12 16:42:11.931 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Received valid block 2
+2022-06-16 22:43:13.789 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Added output org.lubokkanev.bitcoinnode.transaction.Xput@63c5efee to UTXO set.
+2022-06-16 22:43:13.793 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Parsed block 1 hash: [].
+2022-06-16 22:43:13.813 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Added output org.lubokkanev.bitcoinnode.transaction.Xput@5d25e6bb to UTXO set.
+2022-06-16 22:43:13.814 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Parsed block 1 hash: [].
+2022-06-16 22:43:13.818 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Added output org.lubokkanev.bitcoinnode.transaction.Xput@7c041b41 to UTXO set.
+2022-06-16 22:43:13.819 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Parsed block 1 hash: [].
+2022-06-16 22:43:13.823 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Added output org.lubokkanev.bitcoinnode.transaction.Xput@403132fc to UTXO set.
+2022-06-16 22:43:13.824 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Parsed block 1 hash: [].
+2022-06-16 22:43:13.828 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Added output org.lubokkanev.bitcoinnode.transaction.Xput@3a1d593e to UTXO set.
+2022-06-16 22:43:13.828 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Parsed block 1 hash: [].
+2022-06-16 22:43:13.831 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Added output org.lubokkanev.bitcoinnode.transaction.Xput@7859e786 to UTXO set.
+2022-06-16 22:43:13.831 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Parsed block 1 hash: [].
+2022-06-16 22:43:13.831 INFO  org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Successfully mined block 2, hash: []
+2022-06-16 22:43:13.835 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Added output org.lubokkanev.bitcoinnode.transaction.Xput@4a3e3e8b to UTXO set.
+2022-06-16 22:43:13.836 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Parsed block 1 hash: [].
+2022-06-16 22:43:13.836 TRACE org.lubokkanev.bitcoinnode.Node [main] (..lubokkanev.bitcoinnode.Node) [] | Received valid block 2
