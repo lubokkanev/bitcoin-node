@@ -39,23 +39,23 @@ public class Block {
     private void validate(Transaction transaction) throws Exception {
         for (Xput input : transaction.getInputs()) {
             if (input.isCoinbase()) {
-                if (getCoinbaseInput() != null) {
+                if (theresAlreadyCoinbaseInput()) {
                     throw new Exception("This block already contains a coinbase input, you can't add another one."); // TODO: I'm pretty sure there can be multiple coinbase inputs. Probably the transaction can be coinbase or not.
                 }
             }
         }
     }
 
-    private Xput getCoinbaseInput() {
+    private boolean theresAlreadyCoinbaseInput() {
         for (Transaction t : transactions) {
             for (Xput input : t.getInputs()) {
                 if (input.isCoinbase()) {
-                    return input;
+                    return true;
                 }
             }
         }
 
-        return null;
+        return false;
     }
 
     public void addTransactions(Set<Transaction> transactions) {
