@@ -1,5 +1,7 @@
 package org.lubokkanev.bitcoinnode.transaction;
 
+import java.util.Objects;
+
 public class Address {
     public String getCashAddress() {
         return cashAddress;
@@ -38,5 +40,18 @@ public class Address {
     private String calculatePubKeyHash(String cashAddress) {
         // TODO
         return "";
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass())
+            return false;
+        Address address = (Address) o;
+        return Objects.equals(cashAddress, address.cashAddress) && Objects.equals(pubKeyHash, address.pubKeyHash);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(cashAddress, pubKeyHash);
     }
 }

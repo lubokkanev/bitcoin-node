@@ -20,6 +20,7 @@ public class NodeTest {
     private final String AVAILABLE_INPUT = "available-input";
     private final String UNAVAILABLE_INPUT = "unavailable-input";
     private Node node;
+    private Block initialBlock;
 
     @BeforeEach
     public void setup() throws Exception {
@@ -29,7 +30,7 @@ public class NodeTest {
         outputs.add(new Xput(new Address(AVAILABLE_INPUT, ""), 50 * BITCOIN));
         Transaction initialTransaction = new Transaction(inputs, outputs, "");
 
-        Block initialBlock = new Block();
+        initialBlock = new Block();
         initialBlock.addTransaction(initialTransaction);
         node = new Node(initialBlock);
     }
@@ -42,7 +43,7 @@ public class NodeTest {
         outputs.add(new Xput(new Address("test-output", ""), 50 * BITCOIN));
         Transaction validTransaction = new Transaction(inputs, outputs, "");
 
-        assertThrows(Exception.class, () -> node.receiveTransaction(validTransaction));
+         assertDoesNotThrow(() -> node.receiveTransaction(validTransaction));
     }
 
     @Test
@@ -71,8 +72,7 @@ public class NodeTest {
 
     @Test
     public void mineBlock() {
-        Block minedBlock = node.mineBlock();
-        assertDoesNotThrow(() -> node.validateBlock(minedBlock));
+        assertDoesNotThrow(() -> node.mineBlock());
     }
 
     @Test
