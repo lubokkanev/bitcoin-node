@@ -70,19 +70,24 @@ public class Block {
         return blockHash;
     }
 
-    public void findNonce(long difficultyZeros) {
+    public void findNonce() {
         do {
             nonce++;
             blockHash = hash();
-        } while (!checkDifficulty(difficultyZeros));
+        } while (!checkDifficulty(getLeadingZeros()));
     }
 
-    private boolean checkDifficulty(long difficultyZeros) {
-        return getDifficulty() >= difficultyZeros;
+    private boolean checkDifficulty(long leadingZeros) {
+        return getDifficulty() >= leadingZeros;
+    }
+
+    private long getLeadingZeros() {
+        // TODO: compute from the hash
+        return 3;
     }
 
     public long getDifficulty() {
-        // TODO
+        // TODO: use the DAA
         return 3;
     }
 
@@ -94,7 +99,6 @@ public class Block {
 
     public void propagateBlock() {
         // TODO
-        // also add it yourself?
     }
 
     public Block getPrevious() {

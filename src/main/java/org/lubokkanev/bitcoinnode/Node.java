@@ -15,34 +15,33 @@ import java.util.Set;
 public class Node {
     private static final Logger log = LoggerFactory.getLogger(Node.class);
 
-    private Mempool mempool = new Mempool();
+    private final Mempool mempool = new Mempool();
+    private final Set<Xput> utxos = new HashSet<>();
+    private Block latestBlock;
 
     public Block getLatestBlock() {
         return latestBlock;
     }
 
-    private Block latestBlock;
-    private Set<Xput> utxos = new HashSet<>();
-
-    public Node(Block latestBlock) {
+    public Node(Block latestBlock) throws Exception {
+        validateBlock(latestBlock);
         this.latestBlock = latestBlock;
 
-        Set<Xput> inputs = new HashSet<>();
+        Set<Xput> allInputs = new HashSet<>();
         while (latestBlock != null) {
-            for (Transaction t : latestBlock.getTransactions()) {
-                inputs.addAll(t.getInputs());
+            for (Transaction tx : latestBlock.getTransactions()) {
+                allInputs.addAll(tx.getInputs());
 
-                for (Xput output : t.getOutputs()) {
-                    if (!inputs.contains(output)) { // TODO: what about equal Xputs?
-                        utxos.add(output);
-                        log.trace("Added output " + output + " to UTXO set.");
+                for (Xput output : tx.getOutputs()) {
+                    if (!allInputs.contains(output)) { // TODO: what about equal Xputs?
+                       utxos.add(output);
+                       log.trace("Added output {} to UTXO set.", output);
                     }
                 }
             }
-            log.trace("Parsed block " + latestBlock.getNumber() + " hash: " + Arrays.toString(latestBlock.getHash())
-                  + ".");
+           log.trace("Parsed block {} hash: {}.", latestBlock.getNumber(), Arrays.toString(latestBlock.getHash()));
 
-            latestBlock = latestBlock.getPrevious();
+           latestBlock = latestBlock.getPrevious();
         }
     }
 
@@ -50,7 +49,7 @@ public class Node {
         try {
             validateBlock(newBlock);
             latestBlock = newBlock;
-            log.trace("Received valid block " + newBlock.getNumber());
+            log.trace("Received valid block {}", newBlock.getNumber());
         } catch (Exception e) {
             throw new Exception("Invalid block " + newBlock.getNumber() + ", hash: "
                   + Arrays.toString(newBlock.getHash()), e);
@@ -62,25 +61,31 @@ public class Node {
             throw new Exception("Invalid previous block."); // TODO: compare accumulated difficulty
         }
 
-        for (Transaction t : newBlock.getTransactions()) {
-            for (Xput i : t.getInputs()) {
-                if (!utxos.contains(i)) {
-                    throw new Exception("Invalid transaction input: " + i + ".");
-                }
-            }
+        if (latestBlock == null) {
+            return; // nothing more to validate
         }
 
         if (newBlock.getDifficulty() < latestBlock.getDifficulty()) { // TODO: fix to use the DAA difficulty
             throw new Exception("Not sufficient difficulty.");
         }
+
+        for (Transaction tx : newBlock.getTransactions()) {
+            for (Xput in : tx.getInputs()) {
+                if (!utxos.contains(in)) {
+                    throw new Exception("Invalid transaction input: " + in + ".");
+                }
+            }
+        }
     }
 
-    public Block mineBlock() {
+    public Block mineBlock() throws Exception {
         Block newBlock = new Block(latestBlock);
         newBlock.addTransactions(mempool.getTransactions());
-        newBlock.findNonce(2);
+        newBlock.findNonce(); // TODO: use the DAA to determine the difficulty
+        receiveBlock(newBlock);
+        log.info("Successfully mined block {}, hash: {}", newBlock.getNumber(), Arrays.toString(newBlock.getHash()));
+
         newBlock.propagateBlock();
-        log.info("Successfully mined block " + newBlock.getNumber() + ", hash: " + Arrays.toString(newBlock.getHash()));
         return newBlock;
     }
 
@@ -88,7 +93,7 @@ public class Node {
         try {
             validateTransaction(transaction);
             mempool.addTransaction(transaction);
-            log.trace("Received valid transaction with hash: " + transaction.getHash());
+            log.trace("Received valid transaction with hash: {}", transaction.getHash());
         } catch (Exception e) {
             throw new Exception("Invalid transaction.", e);
         }
