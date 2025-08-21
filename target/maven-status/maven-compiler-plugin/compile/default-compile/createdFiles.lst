@@ -1,8 +1,0 @@
-org/lubokkanev/bitcoinnode/mempool/Mempool$MempoolAcceptanceException.class
-org/lubokkanev/bitcoinnode/Node.class
-org/lubokkanev/bitcoinnode/block/Block.class
-org/lubokkanev/bitcoinnode/mempool/Mempool.class
-org/lubokkanev/bitcoinnode/transaction/Address.class
-org/lubokkanev/bitcoinnode/transaction/Transaction.class
-org/lubokkanev/bitcoinnode/transaction/Xput.class
-org/lubokkanev/bitcoinnode/Constants.class
