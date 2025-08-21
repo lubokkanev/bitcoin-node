@@ -81,6 +81,44 @@
           <useModulePath>false</useModulePath>
         </configuration>
       </plugin>
+      <plugin>
+        <groupId>org.jacoco</groupId>
+        <artifactId>jacoco-maven-plugin</artifactId>
+        <version>0.8.12</version>
+        <configuration>
+          <includes>
+            <include>org/lubokkanev/bitcoinnode/**</include>
+          </includes>
+          <excludes>
+            <exclude>**/*Test*</exclude>
+          </excludes>
+          <reports>
+            <xml>
+              <enabled>true</enabled>
+            </xml>
+            <html>
+              <enabled>true</enabled>
+            </html>
+            <csv>
+              <enabled>false</enabled>
+            </csv>
+          </reports>
+        </configuration>
+        <executions>
+          <execution>
+            <goals>
+              <goal>prepare-agent</goal>
+            </goals>
+          </execution>
+          <execution>
+            <id>report</id>
+            <phase>test</phase>
+            <goals>
+              <goal>report</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
     </plugins>
   </build>
 </project>
