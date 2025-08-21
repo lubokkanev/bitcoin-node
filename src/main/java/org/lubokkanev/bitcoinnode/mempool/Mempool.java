@@ -1,6 +1,7 @@
 package org.lubokkanev.bitcoinnode.mempool;
 
 import org.lubokkanev.bitcoinnode.transaction.Transaction;
+import org.lubokkanev.bitcoinnode.transaction.Xput;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -19,7 +20,36 @@ public class Mempool {
     }
 
     private boolean isValid(Transaction transaction) {
-        // TODO: the transactions are already validated at latest-block level, but unconfirmed chain validation is also needed
+        // Validate transaction structure
+        if (transaction.getInputs() == null || transaction.getInputs().isEmpty() ||
+            transaction.getOutputs() == null || transaction.getOutputs().isEmpty()) {
+            return false;
+        }
+        
+        // Check for double spending within the mempool
+        for (Xput input : transaction.getInputs()) {
+            for (Transaction existingTx : unconfirmedTransactions) {
+                if (existingTx.getInputs().contains(input)) {
+                    return false; // Double spending detected
+                }
+            }
+        }
+        
+        // Validate input/output balance (simplified - inputs should cover outputs)
+        long totalInputs = transaction.getInputs().stream()
+            .filter(input -> !input.isCoinbase())
+            .mapToLong(Xput::getAmountSats)
+            .sum();
+        long totalOutputs = transaction.getOutputs().stream()
+            .mapToLong(Xput::getAmountSats)
+            .sum();
+            
+        // For non-coinbase transactions, inputs must be >= outputs (allowing for fees)
+        boolean isCoinbaseTransaction = transaction.getInputs().stream().anyMatch(Xput::isCoinbase);
+        if (!isCoinbaseTransaction && totalInputs < totalOutputs) {
+            return false;
+        }
+        
         return true;
     }
 
@@ -28,7 +58,8 @@ public class Mempool {
     }
 
     public static class MempoolAcceptanceException extends Exception {
-        public MempoolAcceptanceException(String invalid_transaction) {
+        public MempoolAcceptanceException(String message) {
+            super(message);
         }
     }
 }

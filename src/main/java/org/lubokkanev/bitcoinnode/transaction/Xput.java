@@ -17,6 +17,14 @@ public class Xput {
         return COINBASE_ADDRESS.equals(address.getCashAddress()) || COINBASE_ADDRESS.equals(address.getPubKeyHash());
     }
 
+    public long getAmountSats() {
+        return amountSats;
+    }
+
+    public Address getAddress() {
+        return address;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass())

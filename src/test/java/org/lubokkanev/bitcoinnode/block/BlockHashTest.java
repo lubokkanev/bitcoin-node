@@ -15,9 +15,9 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
 public class BlockHashTest {
     private Transaction buildNonCoinbaseTransaction(String txHash) {
         List<Xput> inputs = new ArrayList<>();
-        inputs.add(new Xput(new Address("addr-in", ""), 100));
+        inputs.add(new Xput(new Address("bitcoincash:qpm2qsznhks23z7629mms6s4cwef74vcwvy22gdx6a", "1234567890123456789012345678901234567890"), 100));
         List<Xput> outputs = new ArrayList<>();
-        outputs.add(new Xput(new Address("addr-out", ""), 100));
+        outputs.add(new Xput(new Address("bitcoincash:qr95sy3j9xwd2ap32xkykttr4cvcu7as4y0qverfuy", "0987654321098765432109876543210987654321"), 100));
         return new Transaction(inputs, outputs, txHash);
     }
 
