@@ -56,24 +56,30 @@ public class Block {
     }
 
     private void validate(Transaction transaction) throws Exception {
-        for (Xput input : transaction.getInputs()) {
-            if (input.isCoinbase()) {
-                if (theresAlreadyCoinbaseInput()) {
-                    throw new Exception("This block already contains a coinbase input, you can't add another one."); // TODO: I'm pretty sure there can be multiple coinbase inputs. Probably the transaction can be coinbase or not.
-                }
+        // Check if this is a coinbase transaction (has at least one coinbase input)
+        boolean isCoinbaseTransaction = transaction.getInputs().stream().anyMatch(Xput::isCoinbase);
+        
+        if (isCoinbaseTransaction) {
+            // Only one coinbase transaction is allowed per block
+            if (hasExistingCoinbaseTransaction()) {
+                throw new Exception("This block already contains a coinbase transaction, you can't add another one.");
+            }
+            
+            // A coinbase transaction should have exactly one input (the coinbase input)
+            // and it can have multiple outputs (block reward + transaction fees)
+            if (transaction.getInputs().size() != 1) {
+                throw new Exception("Coinbase transaction must have exactly one input.");
             }
         }
     }
 
-    private boolean theresAlreadyCoinbaseInput() {
+    private boolean hasExistingCoinbaseTransaction() {
         for (Transaction t : transactions) {
-            for (Xput input : t.getInputs()) {
-                if (input.isCoinbase()) {
-                    return true;
-                }
+            boolean isCoinbaseTransaction = t.getInputs().stream().anyMatch(Xput::isCoinbase);
+            if (isCoinbaseTransaction) {
+                return true;
             }
         }
-
         return false;
     }
 
@@ -104,7 +110,7 @@ public class Block {
         return leadingZeros >= getDifficulty();
     }
 
-    private long getLeadingZeros() {
+    public long getLeadingZeros() {
         byte[] hashBytes = getHash();
         long count = 0;
 
@@ -192,7 +198,24 @@ public class Block {
     }
 
     public void propagateBlock() {
-        // TODO
+        // In a real Bitcoin node, this would broadcast the block to peer nodes
+        // For this simplified implementation, we'll just log the action
+        // In production, this would involve:
+        // 1. Serialize the block to network format
+        // 2. Send to all connected peer nodes
+        // 3. Handle network errors and retries
+        // 4. Update peer connection states
+        
+        System.out.println("Propagating block " + number + " with hash: " + 
+                          java.util.Arrays.toString(getHash()) + 
+                          " to network peers");
+        
+        // Simulate network propagation delay
+        try {
+            Thread.sleep(100); // 100ms simulated network delay
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+        }
     }
 
     public Block getPrevious() {
