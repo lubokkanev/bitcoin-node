@@ -84,8 +84,21 @@ public class Block {
     }
 
     private long getLeadingZeros() {
-        // TODO: compute from the hash
-        return 3;
+        byte[] hashBytes = getHash();
+        long count = 0;
+
+        for (byte b : hashBytes) {
+            int unsigned = b & 0xFF;
+            if (unsigned == 0) {
+                count += 8;
+            } else {
+                // Count leading zero bits in this byte
+                count += Integer.numberOfLeadingZeros(unsigned) - 24; // 32-bit result -> 8-bit adjustment
+                break;
+            }
+        }
+
+        return count;
     }
 
     public long getDifficulty() {
