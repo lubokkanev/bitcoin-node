@@ -80,7 +80,7 @@ public class Block {
     }
 
     private boolean checkDifficulty(long leadingZeros) {
-        return getDifficulty() >= leadingZeros;
+        return leadingZeros >= getDifficulty();
     }
 
     private long getLeadingZeros() {
