@@ -2,7 +2,9 @@ package org.lubokkanev.bitcoinnode.block;
 
 import org.lubokkanev.bitcoinnode.transaction.Transaction;
 import org.lubokkanev.bitcoinnode.transaction.Xput;
-
+import java.nio.ByteBuffer;
+import java.nio.charset.StandardCharsets;
+import java.security.MessageDigest;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -92,9 +94,29 @@ public class Block {
     }
 
     private byte[] hash() {
-        // TODO
-        // use nonce, transactions and previous block
-        return new byte[0];
+        try {
+            MessageDigest messageDigest = MessageDigest.getInstance("SHA-256");
+
+            if (previousBlock != null) {
+                messageDigest.update(previousBlock.getHash());
+            }
+
+            ByteBuffer buffer = ByteBuffer.allocate(Long.BYTES * 2);
+            buffer.putLong(number);
+            buffer.putLong(nonce);
+            messageDigest.update(buffer.array());
+
+            for (Transaction transaction : transactions) {
+                String txHash = transaction.getHash();
+                if (txHash != null) {
+                    messageDigest.update(txHash.getBytes(StandardCharsets.UTF_8));
+                }
+            }
+
+            return messageDigest.digest();
+        } catch (Exception e) {
+            throw new RuntimeException("Failed to compute block hash.", e);
+        }
     }
 
     public void propagateBlock() {
